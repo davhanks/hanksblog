@@ -21,10 +21,14 @@ input {
 	background-color: rgba(0,0,0,0.2);
 	font-size: 1.3em;
 	border-width: 0px;
+	padding-left: 5px;
 }
 
 input:focus {
 	background-color: rgba(0,0,0,0.3);
+	border-left-width: 5px;
+	border-color: #428bca;
+	padding-left: 0px;
 }
 
 form {
