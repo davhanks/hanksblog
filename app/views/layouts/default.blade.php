@@ -5,8 +5,7 @@
 		{{ HTML::style('css/bootstrap.css'); }}
 		{{ HTML::style('css/default.css'); }}
 		{{ HTML::style('css/dashboard.css'); }}
-		{{ HTML::script('js/jquery.min.js'); }}
-		{{ HTML::script('js/bootstrap.js'); }}
+
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	</head>
@@ -69,5 +68,8 @@
 			</div>
 		@endif
 		@yield('content')
+		{{ HTML::script('js/jquery.min.js'); }}
+		{{ HTML::script('js/bootstrap.js'); }}
+		{{ HTML::script('/ckeditor/ckeditor.js')}}
 	</body>
 </html>

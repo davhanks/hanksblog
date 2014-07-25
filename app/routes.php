@@ -26,3 +26,7 @@ Route::get('users/login', array('as'=>'login', 'uses'=>'UserController@getLogin'
 Route::post('users/signin', array('uses'=>'UserController@postSignIn'));
 Route::get('users/dashboard', array('as'=>'dashboard', 'uses'=>'UserController@getDashboard'));
 Route::get('users/logout', array('as'=>'logout', 'uses'=>'UserController@getLogout'));
+
+//Posts
+Route::get('posts/list', array('as'=>'list', 'uses'=>'PostController@postList'));
+Route::get('posts/create', array('as'=>'create', 'uses'=>'PostController@create'));
