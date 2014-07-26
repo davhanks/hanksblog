@@ -30,3 +30,4 @@ Route::get('users/logout', array('as'=>'logout', 'uses'=>'UserController@getLogo
 //Posts
 Route::get('posts/list', array('as'=>'list', 'uses'=>'PostController@postList'));
 Route::get('posts/create', array('as'=>'create', 'uses'=>'PostController@create'));
+Route::post('posts/save', array('uses'=>'PostController@save'));

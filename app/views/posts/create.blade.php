@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="main_section">
-	{{ Form::open(array('url'=>'posts/save')) }}
+	{{ Form::open(array('url'=>'posts/save', 'method'=>'POST')) }}
 	@if($errors->any())
 		<div class="alert alert-danger">
 			<a href="#" class="close" data-dismiss="alert">&times;</a>

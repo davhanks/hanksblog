@@ -23,8 +23,8 @@
 						<td>{{ $p->title }}</td>
 						<td>{{ $p->description }}</td>
 						<td><span class="label label-info">{{ Carbon::createFromTimestamp(strtotime($p->created_at))->diffForHumans() }}</span></td>
-						<td>{{ link_to_route('posts.show', 'Preview', array($p->id), array('class'=>'btn btn-info')) }}</td>
-						<td>{{ link_to_route('posts.edit', 'Edit', array($p->id), array('class'=>'btn btn-warning')) }}</td>
+						<td></td>
+						<td></td>
 						<td>Delete</td>
 					</tr>	
 					@endforeach
